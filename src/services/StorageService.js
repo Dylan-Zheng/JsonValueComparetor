@@ -27,7 +27,7 @@ export const ComparetorStorageService = (() => {
     }
 
     const remove = async (comparetor) => {
-        await JsonItemStorage.delete(comparetor.uuid)
+        await JsonItemStorage.delete(comparetor.uuid);
         await ComparetorStorage.delete(comparetor.uuid);
     }
 
